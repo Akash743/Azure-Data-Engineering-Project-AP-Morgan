@@ -3,8 +3,7 @@ Azure Data Engineering Project: AP Morgan Data Pipeline
 
 **Pipeline**
 
-
-﻿<img width="394" alt="Project2_Archiecture" src="https://github.com/Akash743/Azure-Data-Engineering-Project-AP-Morgan/assets/57750483/682bc518-f2d7-407b-b46c-63f3bcb29148">
+<img width="394" alt="Project2_Archiecture" src="https://github.com/Akash743/Azure-Data-Engineering-Project-AP-Morgan/assets/57750483/2c2c0092-36ae-4421-98cd-4ad2432a2ebf">
 
 
 **High Level Details**
