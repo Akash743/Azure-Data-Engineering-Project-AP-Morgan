@@ -19,3 +19,8 @@ Azure Data Engineering Project: AP Morgan Data Pipeline
 5. Move all the passed files to Staging folder.
 
 6. Write the passed files as the Delta table in the Azure Databricks
+
+
+Steps:
+1. Create ADLS Storage Account with Landing Folder in it
+2. Processing using Azure Databricks: Create Azure Databricks Workspace 
