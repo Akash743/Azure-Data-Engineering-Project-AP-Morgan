@@ -1,9 +1,13 @@
 # Azure-Data-Engineering-Project-AP-Morgan
 Azure Data Engineering Project: AP Morgan Data Pipeline
 
-﻿
+**Pipeline**
 
-AP Morgan- High Level Detail
+
+﻿<img width="394" alt="Project2_Archiecture" src="https://github.com/Akash743/Azure-Data-Engineering-Project-AP-Morgan/assets/57750483/682bc518-f2d7-407b-b46c-63f3bcb29148">
+
+
+**High Level Details**
 
 1. Internal Application sends CSV file in Azure data lake storage. Validation needed to apply on this as follows:
 
