@@ -26,11 +26,11 @@ Steps:
 2. Processing using Azure Databricks: Create Azure Databricks Workspace
 3. Create SQL server and attach database to it. A server can have multiple databases. Check the Add Current Client IP address
 4. Install SSMS(Sequel Server Management Studio) in personal system and connect Azur DB with it using Azure Server name. Add CLient IP to Firewall settings.
-5. Create Table using query. Table contains the correct file schema. Will use this format stored in table to validate the files
+5. Create Table named 'FileDetailsFormat' using query. Table contains the correct file schema. Will use this format stored in table to validate the files
 
    ![image](https://github.com/Akash743/Azure-Data-Engineering-Project-AP-Morgan/assets/57750483/57dec0bb-b40f-4ca8-8b64-c50fbce0550e)
 
-We have a three different type of file available.
+We have three different type of file available.
 
 One could be product, another one could be product description and then the third one could be a customer.
 
@@ -44,3 +44,15 @@ So our goal is if we are getting the customer file, we will pull the date format
 
 So that's how we will use the schema validation for our incoming file on this date format.
 
+
+7. Create Key Vault and store the secrets
+   What we want is we want this Databricks to pull the schema of incoming file from this database,
+
+And if it is valid/invalid, based on that it will push the incoming file into these directories, which is again in the ADLS.
+We need to make a connection of Databricks to these storage accounts as well as the database. For both, will store the credentials in the Key Vault. SAS token for connecting ADLS folders and database credentials for DB
+Create Secret Scope for Databricks notebook. This Scope will connect to key Vault to access the ADLS and DB. Use Key Vault Resouce ID and DNS name for Secret scope
+
+Create Databricks cluster
+Input from ADF
+Create DB onnection
+Mount the storage
