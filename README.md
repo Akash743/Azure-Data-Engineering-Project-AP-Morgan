@@ -57,8 +57,12 @@ Input from ADF
 Create DB onnection
 Mount the storage
 **Rule 1** - Check Duplication of rows in file: Find if the row counts in file are equal to no. of distinct rows. If yes, means there is no duplication is there
-**Rule 2** - Check for date formats
-         Based on the file name received, filter 'ColumnName' and 'ColumnDateFormat' from the DB for that specific file name type. Ex. For file 'Product.csv', it will fetch those 2 columns corresponding to FileName 'Product'.
-         Now will filter that ColumnName from the file and try to convert that into ColumnFormat taken from DB. Will count non null occurences while conversion. If non null occurences = no. of rows in file, means all rows date values wer fine as all could be converted to desired Column date format. And this will happen for all 4 ows in DB for Product - StartDate, EndDate, CreateDate, ModifiedDate.
 
-         In case any of the 2 rules is violated, will send the file to Landing\Rejected folder, otherwise will send to Landing\Staging Folder
+**Rule 2** - Check for date formats
+
+         Based on the file name received, filter 'ColumnName' and 'ColumnDateFormat' from the DB for that specific file name type. Ex. For file 'Product.csv', it will fetch those 2 columns corresponding to FileName 'Product'
+         
+         Now will filter that ColumnName from the file and try to convert that into ColumnFormat taken from DB. Will count non null occurences while conversion. 
+         If non null occurences = no. of rows in file, means all rows date values wer fine as all could be converted to desired Column date format. And this will happen for all 4 ows in DB for Product - StartDate, EndDate, CreateDate, ModifiedDate.
+
+In case any of the 2 rules is violated, will send the file to Landing\Rejected folder, otherwise will send to Landing\Staging Folder
