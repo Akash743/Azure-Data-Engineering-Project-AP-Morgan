@@ -56,3 +56,4 @@ Create Databricks cluster
 Input from ADF
 Create DB onnection
 Mount the storage
+Rule 1 - Check Duplication of rows in file: Find if the row counts in file are equal to no. of distinct rows. If yes, means there is no duplication
