@@ -30,22 +30,17 @@ Azure Data Engineering Project: AP Morgan Data Pipeline
 
    ![image](https://github.com/Akash743/Azure-Data-Engineering-Project-AP-Morgan/assets/57750483/57dec0bb-b40f-4ca8-8b64-c50fbce0550e)
 
-We have three different type of file available.
+- We have three different type of file available. One could be Product, another one could be Product description and then the third one could be a Customer.
 
-One could be Product, another one could be Product description and then the third one could be a Customer.
+- So for the Product, you can see it says that it should have these four date columns And for this column, the data, whatever is coming should be in the format present in ColumnDateFormat.
 
-So for the Product, you can see it says that it should have these four date columns
-
-And for this column, the data, whatever is coming should be in the format present in ColumnDateFormat.
-
-So our goal is if we are getting the customer file, we will pull the date format for this customer file and will validate
+- So our goal is if we are getting the customer file, we will pull the date format for this customer file and will validate
 
 So that's how we will use the schema validation for our incoming file on this date format.
 
 
 7. Create Key Vault and store the secrets
-   What we want is we want this Databricks to pull the schema of incoming file from this database,
-
+What we want is we want this Databricks to pull the schema of incoming file from this database,
 And if it is valid/invalid, based on that it will push the incoming file into these directories, which is again in the ADLS.
 We need to make a connection of Databricks to these storage accounts as well as the database. For both, will store the credentials in the Key Vault. SAS token for connecting ADLS folders and database credentials for DB
 Create Secret Scope for Databricks notebook. This Scope will connect to key Vault to access the ADLS and DB. Use Key Vault Resouce ID and DNS name for Secret scope
