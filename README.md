@@ -77,5 +77,5 @@ Go to Author tab and select Databricks Notebook to be run. This notebook should 
 - Create Storage Event Trigger for the same which will triiger the notebook as any file is dropped in Storage account.
 - Ensure that Storage Event Trigger is registered already (Subscriptions>>Resource Providers>>EventGrid)
 
-**Testing**
+10. **Testing**
 Put Valid and Invalid files in Input folder and chck if the pipeline is executed. If executed successfully, will be able to see those files moved to respective Staging and Rejected folder. 
