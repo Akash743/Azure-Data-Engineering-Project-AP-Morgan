@@ -25,7 +25,7 @@ Azure Data Engineering Project: AP Morgan Data Pipeline
 1. Create ADLS Storage Account with Landing Folder in it
 2. Processing using Azure Databricks: Create Azure Databricks Workspace
 3. Create SQL server and attach database to it. A server can have multiple databases. Check the Add Current Client IP address
-4. Install SSMS(Sequel Server Management Studio) in personal system and connect Azur DB with it using Azure Server name. Add CLient IP to Firewall settings.
+4. Install SSMS(Sequel Server Management Studio) in personal system and connect Azure DB with it using Azure Server name. Add CLient IP to Firewall settings.
 5. Create Table named 'FileDetailsFormat' using query. Table contains the correct file schema. Will use this format stored in table to validate the files
 
    ![image](https://github.com/Akash743/Azure-Data-Engineering-Project-AP-Morgan/assets/57750483/57dec0bb-b40f-4ca8-8b64-c50fbce0550e)
